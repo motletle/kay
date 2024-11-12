@@ -1,0 +1,178 @@
+root {
+  --primary-color: #35424a;
+  --secondary-color: #9c9898;
+  --accent-color: #0b07fa;
+  --error-color: #ff4b4b;
+  --background-color: #f5f5f5;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url(wings_jpg.jpg);
+  background-size: cover;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: rgb(245, 241, 241);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(243, 11, 11, 0.1);
+}
+header {
+  background: linear-gradient(grey, rgb(98, 98, 146), black);
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+nav {
+  margin: 20px 0;
+}
+nav ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;           /* Remove padding */
+  margin: 0;            /* Remove default margin */
+  display: flex;        /* Use flexbox for horizontal layout */
+  justify-content: flex-start; /* Align items to the start (left) */
+  align-items: center;  /* Center items vertically within the nav */
+  
+}
+nav ul li {
+  margin: 0 15px; 
+  border: 2px solid rgb(55, 32, 92); /* Set margin between list items */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: rgb(40, 31, 71);
+}
+nav ul li a {
+  color: #ffffff;        /* Set link color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; 
+ 
+}
+nav button {
+  margin-left: 10px; /* Space buttons away from links */
+  padding: 5px 10px; /* Add padding for better clickability */
+  background-color: var(--primary-color); /* Use primary color */
+  color: white;
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+nav button:hover {
+  opacity: 0.8; /* Button hover effect */
+}
+section {
+  background: rgb(233, 233, 240); /* Use secondary color */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #cccccc;
+}
+h3{
+  align-items: center;
+}
+h2 {
+  color: var(--primary-color); /* Use primary color */
+  margin-left: 200px;
+}
+form {
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-color); /* Use primary color for border */
+  border-radius: 10px;                   /* Increased border radius */
+  padding: 20px;                          /* Increased padding for inner spacing */
+  background-color: var(--background-color); /* Background color for contrast */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+form input,
+form select {
+  margin: 10px 0;                    /* Increased vertical spacing */
+  padding: 12px;                     /* Increased padding for comfort */
+  width: calc(100% - 24px);          /* Adjusted width for padding */
+  box-sizing: border-box;
+  border: 2px solid var(--secondary-color); /* Use secondary color for the border */
+  border-radius: 5px;                /* Rounded corners */
+  transition: border-color 0.3s;     /* Transition effect for border color */
+}
+form input:focus,
+form select:focus {
+  border-color: var(--accent-color); /* Change border color on focus */
+  outline: none;                     /* Remove outline on focus */
+}
+form button {
+
+  padding: 12px 20px;               /* Adjusted padding */
+  background-color: var(--accent-color); /* Use accent color */
+  color:blue;
+  border: none;
+  border-radius: 5px;               /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Transition for button effects */
+}
+.button{
+  color: #0a05c4;
+  margin-bottom: 70px;
+}
+form button:hover {
+  background-color: #0a05c4; /* Darkened on hover */
+  transform: scale(1.05);    /* Slightly enlarge on hover */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #0bf83f;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: var(--primary-color); /* Use primary color */
+  color: #ffffff;
+}
+.error {
+  border: 2px solid var(--error-color); /* Use error color */
+  background-color: rgba(255, 75, 75, 0.1); /* Light red background for errors */
+}
+.error-message {
+  color: var(--error-color); /* Use error color */
+  font-size: 0.9em;
+  margin: 5px 0;             /* Slightly increased margin */
+  font-weight: bold;         /* Make error message bold */
+}
+.home {
+  padding: 20px;
+  text-align: center;
+}
+.home h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.home img {
+  max-width: 80%;          /* Set max width to 80% of the parent */
+  max-height: 70%;         /* Set max height to 70% of the parent */
+  border: 10px solid var(--primary-color); /* Use primary color for border */
+  border-radius: 60%;      /* Make the border circular */
+  margin-top: 0;           /* No top margin */
+  object-fit: cover;       /* Ensures the image covers the area while being centered if not square */
+}
+.btn{
+  color: #0b07fa;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.myBtn{
+  color: #0b07fa;
+  margin-left: 170px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
